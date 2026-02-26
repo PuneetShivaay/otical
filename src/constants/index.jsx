@@ -271,9 +271,9 @@ export const contactListItems = [
 
 export const recentProjects = [
   {
-    image: udaratva,
-    title: "Udaratva",
-    category: "Energy Solutions",
+    image: user3,
+    title: "Puneet Kumar",
+    category: "Software Engineer",
     features: [
       "Private board sharing",
       "5 Gb Storage",
@@ -282,9 +282,9 @@ export const recentProjects = [
     ],
   },
   {
-    image: sahajSahyog,
-    title: "Ranak Energy",
-    category: "Solar Power Company",
+    image: user1,
+    title: "Shekhar Sharma",
+    category: "Mechanical Engineer",
     features: [
       "Private board sharing",
       "10 Gb Storage",
@@ -293,9 +293,9 @@ export const recentProjects = [
     ],
   },
   {
-    image: sahajSahyog,
-    title: "Sahaj Sahyog",
-    category: "Mining Consultants",
+    image: user5,
+    title: "Dheeraj Modi",
+    category: "Blockchain Developer",
     features: [
       "Private board sharing",
       "Unlimited Storage",
