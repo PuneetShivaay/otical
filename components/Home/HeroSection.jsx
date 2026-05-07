@@ -1,0 +1,44 @@
+import Link from "next/link";
+import Animated from "../animation/Animated";
+
+const HeroSection = () => {
+  return (
+    <Animated>
+      <div className="flex flex-col items-center mt-20 lg:mt-28 max-w-7xl mx-auto px-4">
+        <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
+          Your Partner in
+          <span className="bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text"> Web Development & AI Innovation</span>
+        </h1>
+        <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl">
+          We craft bespoke websites and leverage the power of Artificial Intelligence and Machine Learning to drive your business forward.
+        </p>
+        <div className="flex flex-wrap justify-center my-10">
+          <Link href="/contact" className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 m-2 rounded-md">Get a Free Consultation</Link>
+          <Link href="/projects" className="py-3 px-4 m-2 rounded-md border">View Our Portfolio</Link>
+        </div>
+        <div className="flex mt-10 justify-center flex-col lg:flex-row items-center">
+          <video
+            autoPlay
+            loop
+            muted
+            className="rounded-lg w-full lg:w-1/2 border border-orange-700 shadow-orange-400 my-2 lg:mx-2"
+          >
+            <source src="/videos/video1.mp4" type="video/mp4" />
+            Your Browser does not support the video tag
+          </video>
+          <video
+            autoPlay
+            loop
+            muted
+            className="rounded-lg w-full lg:w-1/2 border border-orange-700 shadow-orange-400 my-2 lg:mx-2"
+          >
+            <source src="/videos/video2.mp4" type="video/mp4" />
+            Your Browser does not support the video tag
+          </video>
+        </div>
+      </div>
+    </Animated>
+  );
+};
+
+export default HeroSection;

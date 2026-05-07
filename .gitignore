@@ -1,8 +1,6 @@
-# dependencies
+# Next.js
+.next/
+
+# IDX
+.idx/
 node_modules
-
-# env
-.env
-
-# build output
-dist
