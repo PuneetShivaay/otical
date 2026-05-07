@@ -10,39 +10,39 @@ export const navItems = [
 
 export const testimonials = [
   {
-    user: "John Doe",
-    company: "Stellar Solutions",
-    image: "/images/testimonials/user1.jpg",
+    user: "Pankaj Sharma",
+    company: "Udaratva",
+    image: "/logo.png",
     text: "I am extremely satisfied with the services provided. The team was professional, and the results were delivered on time.",
   },
   {
-    user: "Jane Smith",
-    company: "BlueWave Technologies",
-    image: "/images/testimonials/user2.jpg",
+    user: "Sushil Mishra",
+    company: "Ranak Energy",
+    image: "/logo.png",
     text: "The team went above and beyond to meet our needs. I would highly recommend them to anyone looking for quality services.",
   },
   {
-    user: "David Johnson",
-    company: "Quantum Innovations",
-    image: "/images/testimonials/user3.jpg",
-    text: "Working with this company was a pleasure. The team was responsive, and the results were excellent.",
+    user: "Vishal Singh",
+    company: "MMP",
+    image: "/logo.png",
+    text: "Working with this company was a pleasure. The team was responsive, and the results were excellent & on time.",
   },
     {
-    user: "Emily Williams",
-    company: "Visionary Creations",
-    image: "/images/testimonials/user1.jpg",
+    user: "Amir Khan",
+    company: "DekhoTo",
+    image:"/logo.png",
     text: "The team was knowledgeable and experienced, and they were able to deliver a high-quality product on time and within budget.",
   },
   {
-    user: "Michael Brown",
-    company: "Apex Digital",
-    image: "/images/testimonials/user2.jpg",
+    user: "Abhishek Singh",
+    company: "BookDesigner",
+    image: "/logo.png",
     text: "I was impressed with the team's attention to detail and their commitment to delivering a high-quality product.",
   },
   {
-    user: "Sarah Davis",
-    company: "NextGen Systems",
-    image: "/images/testimonials/user3.jpg",
+    user: "Shahsi Singh",
+    company: "Mohak",
+    image:"/logo.png",
     text: "The team was a pleasure to work with, and I would not hesitate to recommend them to anyone looking for a reliable and trustworthy partner.",
   },
 ];
@@ -147,7 +147,7 @@ export const about = {
     {
       name: "Ghanish Baghel",
       title: "Marketing Head",
-      image: "/images/testimonials/user3.jpg",
+      image: "/images/team/ghanisht.jpg",
       social: {
         twitter: "https://twitter.com/emilywilliams",
         linkedin: "https://www.linkedin.com/in/emilywilliams",
@@ -157,7 +157,7 @@ export const about = {
     {
       name: "Ratnesh Kumar",
       title: "AI/ML Engineer",
-      image: "/images/team/user4.jpg",
+      image: "/images/team/ratnesh.jpg",
       social: {
         twitter: "https://twitter.com/johndoe",
         linkedin: "https://www.linkedin.com/in/johndoe",
@@ -167,7 +167,7 @@ export const about = {
     {
       name: "Dheeraj Kumar",
       title: "Blockchain Developer",
-      image: "/images/team/user4.jpg",
+      image: "/images/team/dheeraj.jpg",
       social: {
         twitter: "https://twitter.com/janesmith",
         linkedin: "https://www.linkedin.com/in/janesmith",
@@ -177,7 +177,7 @@ export const about = {
      {
       name: "Shekhar Sharma",
       title: "IOT Engineer",
-      image: "/images/team/user4.jpg",
+      image: "/images/team/shekhar.jpg",
       social: {
         twitter: "https://twitter.com/michaelbrown",
         linkedin: "https://www.linkedin.com/in/michaelbrown",
@@ -187,7 +187,7 @@ export const about = {
     {
       name: "Amit Kumar",
       title: "Graphic Designer",
-      image: "/images/team/user4.jpg",
+      image: "/images/team/amit.png",
       social: {
         twitter: "https://twitter.com/sarahdavis",
         linkedin: "https://www.linkedin.com/in/sarahdavis",
@@ -197,7 +197,7 @@ export const about = {
     {
       name: "Puneet Kumar",
       title: "Web Developer",
-      image: "/images/team/user4.jpg",
+      image: "/images/team/puneet.jpg",
       social: {
         twitter: "https://twitter.com/davidjohnson",
         linkedin: "https://www.linkedin.com/in/davidjohnson",
@@ -207,7 +207,7 @@ export const about = {
     {
       name: "Ritu Chaudhary",
       title: "QA Engineer",
-      image: "/images/team/user4.jpg",
+      image: "/images/team/ritu.png",
       social: {
         twitter: "https://twitter.com/emilywilliams",
         linkedin: "https://www.linkedin.com/in/emilywilliams",
@@ -217,7 +217,17 @@ export const about = {
     {
       name: "Aman Tiwari",
       title: "Web Developer",
-      image: "/images/team/user4.jpg",
+      image: "/images/team/aman.png",
+      social: {
+        twitter: "https://twitter.com/davidjohnson",
+        linkedin: "https://www.linkedin.com/in/davidjohnson",
+        github: "https://github.com/davidjohnson"
+      },
+    },
+    {
+      name: "Pratibha",
+      title: "UI Designer",
+      image: "/images/team/pratibha.jpg",
       social: {
         twitter: "https://twitter.com/davidjohnson",
         linkedin: "https://www.linkedin.com/in/davidjohnson",
@@ -334,7 +344,7 @@ export const communityLinks = [
 
 export const projects = [
     {
-        title: "UdaratvaLogo",
+        title: "Udaratva",
         image: "/images/clients/UdaratvaLogo.png",
         category: "UI/UX Design",
     },  

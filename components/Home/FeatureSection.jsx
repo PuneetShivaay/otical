@@ -23,11 +23,11 @@ const FeatureSection = () => {
           {features.map((feature, index) => (
             <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-4">
               <div className="bg-neutral-900 rounded-lg p-6 h-full transition-all duration-300 hover:bg-neutral-800 hover:shadow-lg hover:shadow-orange-500/10">
-                <div className="flex items-start">
-                  <div className="flex h-12 w-12 p-3 bg-gradient-to-r from-orange-500 to-orange-700 text-white justify-center items-center rounded-full">
+                <div className="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left">
+                  <div className="flex h-12 w-12 p-3 bg-gradient-to-r from-orange-500 to-orange-700 text-white justify-center items-center rounded-full shrink-0">
                     {feature.icon}
                   </div>
-                  <div className="ml-4">
+                  <div className="mt-4 sm:mt-0 sm:ml-4">
                     <h5 className="mt-1 mb-2 text-xl text-white">{feature.text}</h5>
                     <p className="text-md text-neutral-400">{feature.description}</p>
                   </div>
