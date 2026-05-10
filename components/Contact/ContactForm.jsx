@@ -1,5 +1,4 @@
 'use client';
-import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -38,7 +37,7 @@ const ContactForm = () => {
         return errors;
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         const validationErrors = validateForm();
         if (Object.keys(validationErrors).length > 0) {
@@ -47,27 +46,34 @@ const ContactForm = () => {
             setErrors({});
             setIsSending(true);
 
-            emailjs
-                .send(
-                    "service_tnr0kl7",
-                    "template_rud94qm",
-                    formData,
-                    process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-                )
-                .then((response) => {
+            try {
+                const res = await fetch('/api/send', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        email: formData.email,
+                        subject: `New message from ${formData.name}`,
+                        message: formData.message,
+                    }),
+                });
+
+                if (res.ok) {
                     toast.success("Message sent successfully!");
                     setFormData({
                         name: "",
                         email: "",
                         message: "",
                     });
-                })
-                .catch((error) => {
+                } else {
                     toast.error("Something went wrong. Please try again.");
-                })
-                .finally(() => {
-                    setIsSending(false);
-                });
+                }
+            } catch (error) {
+                toast.error("Something went wrong. Please try again.");
+            } finally {
+                setIsSending(false);
+            }
         }
     };
 
