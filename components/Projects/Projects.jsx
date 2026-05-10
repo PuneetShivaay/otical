@@ -1,4 +1,3 @@
-import { CheckCircle2 } from "lucide-react";
 import { projects } from "../../constants";
 
 function Projects() {
@@ -24,28 +23,10 @@ function Projects() {
             <div key={index} className="w-full md:w-[45%] lg:w-[30%] p-2">
               <div className="bg-neutral-800/50 p-6 rounded-2xl border border-neutral-700 h-full flex flex-col transition-all duration-300 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20">
                 <img
-                  className="rounded-lg border border-neutral-600 shadow-md mx-auto mb-6 h-48 w-full object-cover transition-transform duration-300 hover:scale-105"
+                  className="rounded-lg border border-neutral-600 shadow-md mx-auto h-full w-full object-cover transition-transform duration-300 hover:scale-105"
                   src={project.image}
                   alt={project.title}
                 />
-                <div className="flex-grow">
-                  <p className="text-2xl mb-2 text-white">{project.title}</p>
-                  <p className="mb-4">
-                    <span className="text-orange-400 tracking-tight text-sm">
-                      {project.category}
-                    </span>
-                  </p>
-                  {project.features && (
-                    <ul className="space-y-3 mb-6">
-                      {project.features.map((feature, index) => (
-                        <li key={index} className="flex items-center text-neutral-300">
-                          <CheckCircle2 size={18} className="text-green-400 mr-3 shrink-0" />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
               </div>
             </div>
           ))}

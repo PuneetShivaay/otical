@@ -7,7 +7,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <motion.footer 
-      className="mt-20 border-t py-10 border-neutral-700 bg-neutral-900/50"
+      className="mt-20 py-10 bg-neutral-900/50"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -76,19 +76,19 @@ const Footer = () => {
         <div className="mt-10 border-t border-neutral-700 pt-8 flex flex-col sm:flex-row items-center justify-between">
           <p className="text-sm text-neutral-400">© {new Date().getFullYear()} Otical™ All Rights Reserved.</p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
-            <a href="#" className="text-neutral-400 hover:text-orange-500 transition-transform duration-300 transform hover:scale-125">
+            <a href="https://www.linkedin.com/company/oticalofficial" className="text-neutral-400 hover:text-orange-500 transition-transform duration-300 transform hover:scale-125">
               <Facebook size={20} />
             </a>
-            <a href="#" className="text-neutral-400 hover:text-orange-500 transition-transform duration-300 transform hover:scale-125">
+            <a href="https://www.linkedin.com/company/oticalofficial" className="text-neutral-400 hover:text-orange-500 transition-transform duration-300 transform hover:scale-125">
               <Instagram size={20} />
             </a>
-            <a href="#" className="text-neutral-400 hover:text-orange-500 transition-transform duration-300 transform hover:scale-125">
+            <a href="https://www.linkedin.com/company/oticalofficial" className="text-neutral-400 hover:text-orange-500 transition-transform duration-300 transform hover:scale-125">
               <Twitter size={20} />
             </a>
-             <a href="#" className="text-neutral-400 hover:text-orange-500 transition-transform duration-300 transform hover:scale-125">
+             <a href="https://www.linkedin.com/company/oticalofficial" className="text-neutral-400 hover:text-orange-500 transition-transform duration-300 transform hover:scale-125">
               <Linkedin size={20} />
             </a>
-             <a href="#" className="text-neutral-400 hover:text-orange-500 transition-transform duration-300 transform hover:scale-125">
+             <a href="https://www.linkedin.com/company/oticalofficial" className="text-neutral-400 hover:text-orange-500 transition-transform duration-300 transform hover:scale-125">
               <Github size={20} />
             </a>
           </div>

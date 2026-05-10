@@ -3,7 +3,7 @@ import { Linkedin, Twitter, Github } from 'lucide-react';
 
 function Team() {
     return (
-        <div className="relative py-20 border-b border-neutral-800 bg-neutral-900/50">
+        <div className="relative py-20 bg-neutral-900/50">
             <div className="text-center max-w-7xl mx-auto px-4">
                 <div>
                     <span className="bg-orange-500/10 text-orange-500 rounded-full h-6 text-sm font-medium px-4 py-2 uppercase">

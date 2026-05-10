@@ -1,9 +1,70 @@
 import { BotMessageSquare, Fingerprint, ShieldHalf, BatteryCharging, PlugZap, GlobeLock, Component, Users, User, Mail, MessageSquare, Phone } from "lucide-react";
 
+export const services = [
+  {
+    icon: <BotMessageSquare />,
+    text: "Web Development",
+    href: "/services/web-development",
+    description: "We build responsive and scalable web applications tailored to your business needs, from simple landing pages to complex e-commerce platforms.",
+  },
+  {
+    icon: <Fingerprint />,
+    text: "Mobile App Development",
+    href: "/services/mobile-app-development",
+    description: "We create beautiful and intuitive mobile apps for both iOS and Android, helping you reach your customers on their favorite devices.",
+  },
+    {
+    icon: <ShieldHalf />,
+    text: "UI/UX Design",
+    href: "/services/ui-ux-design",
+    description: "We design user-centric interfaces that are both aesthetically pleasing and easy to use, ensuring a seamless user experience.",
+  },
+  {
+    icon: <BatteryCharging />,
+    text: "Blockchain Technology",
+    href: "/services/blockchain-technology",
+    description: "We provide expert consulting and development services for decentralized applications, smart contracts, and other blockchain-based solutions.",
+  },
+    {
+    icon: <PlugZap />,
+    text: "AI & Machine Learning",
+    href: "/services/ai-machine-learning",
+    description: "Leverage the power of AI and machine learning to automate processes, gain insights from your data, and create intelligent applications.",
+  },
+  {
+    icon: <GlobeLock />,
+    text: "DevOps & Cloud",
+    href: "/services/devops-cloud",
+    description: "We help you streamline your development and deployment processes with our DevOps and cloud computing services, ensuring reliability and scalability.",
+  },
+    {
+    icon: <Component />,
+    text: "Cybersecurity",
+    href: "/services/cybersecurity",
+    description: "Protect your digital assets with our comprehensive cybersecurity services, including vulnerability assessments, penetration testing, and threat intelligence.",
+  },
+  {
+    icon: <Users />,
+    text: "IT Consulting",
+    href: "/services/it-consulting",
+    description: "Our expert consultants provide strategic guidance and support to help you navigate the complexities of the digital landscape and make informed decisions.",
+  },
+  {
+    icon: <Component />,
+    text: "IOT Projects",
+    href: "/services/iot-projects",
+    description: "We design and build custom IOT solutions to connect and automate your devices, enabling data collection and remote control for a variety of applications.",
+  },
+];
+
 export const navItems = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
+  {
+    label: "Services",
+    href: "/services",
+    children: services.map(service => ({ label: service.text, href: service.href }))
+  },
   { label: "Projects", href: "/projects" },
   { label: "Contact", href: "/contact" },
 ];
@@ -149,9 +210,9 @@ export const about = {
       title: "Marketing Head",
       image: "/images/team/ghanisht.jpg",
       social: {
-        twitter: "https://twitter.com/emilywilliams",
-        linkedin: "https://www.linkedin.com/in/emilywilliams",
-        github: "https://github.com/emilywilliams"
+        twitter: "https://www.linkedin.com/in/ghanist-baghel",
+        linkedin: "hhttps://www.linkedin.com/in/ghanist-baghel",
+        github: "https://www.linkedin.com/in/ghanist-baghel"
       },
     },
     {
@@ -159,9 +220,9 @@ export const about = {
       title: "AI/ML Engineer",
       image: "/images/team/ratnesh.jpg",
       social: {
-        twitter: "https://twitter.com/johndoe",
-        linkedin: "https://www.linkedin.com/in/johndoe",
-        github: "https://github.com/johndoe"
+        twitter: "https://www.linkedin.com/in/kratnesh",
+        linkedin: "https://www.linkedin.com/in/kratnesh",
+        github: "https://www.linkedin.com/in/kratnesh"
       },
     },
     {
@@ -169,9 +230,9 @@ export const about = {
       title: "Blockchain Developer",
       image: "/images/team/dheeraj.jpg",
       social: {
-        twitter: "https://twitter.com/janesmith",
-        linkedin: "https://www.linkedin.com/in/janesmith",
-        github: "https://github.com/janesmith"
+        twitter: "https://www.linkedin.com/in/dheeraj-kumar-a8b532170",
+        linkedin: "https://www.linkedin.com/in/dheeraj-kumar-a8b532170",
+        github: "https://www.linkedin.com/in/dheeraj-kumar-a8b532170"
       },
     },
      {
@@ -179,9 +240,9 @@ export const about = {
       title: "IOT Engineer",
       image: "/images/team/shekhar.jpg",
       social: {
-        twitter: "https://twitter.com/michaelbrown",
-        linkedin: "https://www.linkedin.com/in/michaelbrown",
-        github: "https://github.com/michaelbrown"
+        twitter: "https://www.linkedin.com/in/sharmashekharr",
+        linkedin: "https://www.linkedin.com/in/sharmashekharr",
+        github: "https://www.linkedin.com/in/sharmashekharr"
       },
     },
     {
@@ -189,9 +250,9 @@ export const about = {
       title: "Graphic Designer",
       image: "/images/team/amit.png",
       social: {
-        twitter: "https://twitter.com/sarahdavis",
-        linkedin: "https://www.linkedin.com/in/sarahdavis",
-        github: "https://github.com/sarahdavis"
+        twitter: "https://www.linkedin.com/company/oticalofficial",
+        linkedin: "https://www.linkedin.com/company/oticalofficial",
+        github: "https://www.linkedin.com/company/oticalofficial"
       },
     },
     {
@@ -199,9 +260,9 @@ export const about = {
       title: "Web Developer",
       image: "/images/team/puneet.jpg",
       social: {
-        twitter: "https://twitter.com/davidjohnson",
-        linkedin: "https://www.linkedin.com/in/davidjohnson",
-        github: "https://github.com/davidjohnson"
+        twitter: "https://www.linkedin.com/in/puneetshivaay",
+        linkedin: "https://www.linkedin.com/in/puneetshivaay",
+        github: "https://www.linkedin.com/in/puneetshivaay"
       },
     },
     {
@@ -209,9 +270,9 @@ export const about = {
       title: "QA Engineer",
       image: "/images/team/ritu.png",
       social: {
-        twitter: "https://twitter.com/emilywilliams",
-        linkedin: "https://www.linkedin.com/in/emilywilliams",
-        github: "https://github.com/emilywilliams"
+        twitter: "https://www.linkedin.com/in/rituchaudharyqa",
+        linkedin: "https://www.linkedin.com/in/rituchaudharyqa",
+        github: "https://www.linkedin.com/in/rituchaudharyqa"
       },
     },
     {
@@ -219,9 +280,9 @@ export const about = {
       title: "Web Developer",
       image: "/images/team/aman.png",
       social: {
-        twitter: "https://twitter.com/davidjohnson",
-        linkedin: "https://www.linkedin.com/in/davidjohnson",
-        github: "https://github.com/davidjohnson"
+        twitter: "https://www.linkedin.com/in/aman-tiwari-dev/",
+        linkedin: "https://www.linkedin.com/in/aman-tiwari-dev/",
+        github: "https://www.linkedin.com/in/aman-tiwari-dev/"
       },
     },
     {
@@ -229,58 +290,15 @@ export const about = {
       title: "UI Designer",
       image: "/images/team/pratibha.jpg",
       social: {
-        twitter: "https://twitter.com/davidjohnson",
-        linkedin: "https://www.linkedin.com/in/davidjohnson",
-        github: "https://github.com/davidjohnson"
+        twitter: "https://www.linkedin.com/in/pratibha-kanaujiya-6462b0234/",
+        linkedin: "https://www.linkedin.com/in/pratibha-kanaujiya-6462b0234/",
+        github: "https://www.linkedin.com/in/pratibha-kanaujiya-6462b0234/"
       },
     },
   ],
   mission: "Our mission is to empower businesses with innovative technology solutions, driving growth and success in the digital age. We are committed to delivering excellence and building long-lasting partnerships with our clients.",
   vision: "Our vision is to be a global leader in technology and innovation, creating a better future for businesses and society. We strive to be a trusted partner for our clients, delivering cutting-edge solutions that transform industries and drive positive change.",
 };
-
-export const services = [
-  {
-    icon: <BotMessageSquare />,
-    text: "Web Development",
-    description: "We build responsive and scalable web applications tailored to your business needs, from simple landing pages to complex e-commerce platforms.",
-  },
-  {
-    icon: <Fingerprint />,
-    text: "Mobile App Development",
-    description: "We create beautiful and intuitive mobile apps for both iOS and Android, helping you reach your customers on their favorite devices.",
-  },
-    {
-    icon: <ShieldHalf />,
-    text: "UI/UX Design",
-    description: "We design user-centric interfaces that are both aesthetically pleasing and easy to use, ensuring a seamless user experience.",
-  },
-  {
-    icon: <BatteryCharging />,
-    text: "Blockchain Technology",
-    description: "We provide expert consulting and development services for decentralized applications, smart contracts, and other blockchain-based solutions.",
-  },
-    {
-    icon: <PlugZap />,
-    text: "AI & Machine Learning",
-    description: "Leverage the power of AI and machine learning to automate processes, gain insights from your data, and create intelligent applications.",
-  },
-  {
-    icon: <GlobeLock />,
-    text: "DevOps & Cloud",
-    description: "We help you streamline your development and deployment processes with our DevOps and cloud computing services, ensuring reliability and scalability.",
-  },
-    {
-    icon: <Component />,
-    text: "Cybersecurity",
-    description: "Protect your digital assets with our comprehensive cybersecurity services, including vulnerability assessments, penetration testing, and threat intelligence.",
-  },
-  {
-    icon: <Users />,
-    text: "IT Consulting",
-    description: "Our expert consultants provide strategic guidance and support to help you navigate the complexities of the digital landscape and make informed decisions.",
-  },
-];
 
 export const contact = {
   form: [

@@ -1,12 +1,18 @@
 import './globals.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
-import { Poppins } from 'next/font/google';
+import { Inter, Lora } from 'next/font/google';
 
-const poppins = Poppins({
+const inter = Inter({
   subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  variable: '--font-poppins',
+  variable: '--font-inter',
+});
+
+const lora = Lora({
+  subsets: ['latin'],
+  variable: '--font-lora',
 });
 
 export default function RootLayout({ children }) {
@@ -15,7 +21,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/logo.png" />
       </head>
-      <body className={`${poppins.variable} font-sans`}>
+      <body className={`${inter.variable} ${lora.variable} font-sans`}>
         <Navbar />
         <main>{children}</main>
         <Footer />
