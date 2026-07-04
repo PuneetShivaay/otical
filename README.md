@@ -6,6 +6,8 @@ Deployed to Vercel Hosting (New Version) : https://otical.vercel.app/
 
 Deployed to Firebase Hosting (Old Version) : https://otical.web.app/
 
+See also Otical Text Utils App : https://oticaltextutils.web.app/
+
 ## Some Screenshots
 
 ![{7223453D-A97B-40F8-9191-22E6F5782810}](https://github.com/user-attachments/assets/92b6ad39-b618-4a99-90e3-4c0a34b46e39)
